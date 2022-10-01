@@ -3,31 +3,43 @@
   display: flex;
   border: 0.1px solid black;
 }
+#nav{
+  background-color: olive;
+  display: flex;
+  flex: 1.2;
+  justify-content: center;
+  align-items: center;
+}
 #main{
   background-color: violet;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  font-size: 2em;
   flex:3;
 }
 #aside{
   background-color: green;
   flex: 1;
-  display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
-  font-weight: bold;
-  color: white;
+
+}
+.aside_item{
+  height: 100px;
+  background-color: fuchsia;
+  margin: 4px;
 }
 
 @media screen and (max-width: 900px){
 #container{
   /*Lorsque l'écran est en dessous de 900px, "renversement de position*/
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
+
+  .aside_item{
+    height: 50px;
+    background-color: fuchsia;
+    margin: 4px;
+  }
 
 }
