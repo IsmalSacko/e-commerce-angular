@@ -1,0 +1,33 @@
+#container{
+  height: calc(100vh - 160px);
+  display: flex;
+  border: 0.1px solid black;
+}
+#main{
+  background-color: violet;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2em;
+  flex:3;
+}
+#aside{
+  background-color: green;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 900px){
+#container{
+  /*Lorsque l'écran est en dessous de 900px, "renversement de position*/
+  flex-direction: column-reverse;
+}
+
+}
